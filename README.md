@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+```markdown
+# MY Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple weather app that allows you to get the current weather for a location using the Tomorrow.io Weather API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Location search with Material UI Autocomplete.
+- Weather information retrieval from Tomorrow.io API.
+- Display of current weather conditions.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, ensure you have met the following requirements:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js and npm (Node Package Manager) installed on your development environment.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/yourusername/weather-app.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd weather-app
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the project dependencies:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Obtain API Keys:
+   - Sign up for a free API key from [Tomorrow.io](https://www.tomorrow.io/weather-api/).
+   - Create a project on the [Google Cloud Console](https://console.cloud.google.com/).
+   - Enable the "Places API" for your project and generate an API key.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Configuration Files:
+   - Create a `.env` file in the project root.
+   - Add your API keys to the `.env` file:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```dotenv
+   TOMORROW_IO_API_KEY=your-tomorrow-io-api-key
+   GOOGLE_MAPS_API_KEY=your-google-places-api-key
+   ```
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+2. Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Enter a location in the search bar, and the app will display the current weather information for that location.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+- Material UI Autocomplete: [Material-UI](https://material-ui.com/components/autocomplete/)
+- Tomorrow.io Weather API: [Tomorrow.io](https://www.tomorrow.io/weather-api/)
+- Google Places API: [Google Cloud](https://cloud.google.com/maps-platform/places)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or need assistance, please contact [Your Name](mailto:clark.smith79@gmail.com).
+```
