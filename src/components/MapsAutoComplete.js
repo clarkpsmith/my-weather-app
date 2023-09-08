@@ -56,7 +56,7 @@ export default function GoogleMaps({ setLatLng, value, setValue }) {
     if (value) {
       getLatLong(value.place_id);
     }
-  }, [value]);
+  }, [value, setLatLng]);
 
   if (typeof window !== 'undefined' && !loaded.current) {
     if (!document.querySelector('#google-maps')) {

@@ -48,7 +48,7 @@ const CurrentWeather = ({ weather, location }) => {
                 src={`/images/icons/${iconString}`}
               ></img>
             </div>
-            <p className="p-2 text-[120px]">
+            <p className="p-2 pl-4 text-[120px]">
               {Math.round(weather?.values?.temperature)}°
             </p>
           </div>
