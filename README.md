@@ -1,5 +1,5 @@
 ```markdown
-# MY Weather App
+# My Weather App
 
 A simple weather app that allows you to get the current weather for a location using the Tomorrow.io Weather API.
 
@@ -76,5 +76,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or need assistance, please contact [Your Name](mailto:clark.smith79@gmail.com).
+If you have any questions or need assistance, please contact [Clark Smith](mailto:clark.smith79@gmail.com).
 ```
