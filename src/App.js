@@ -13,7 +13,7 @@ function App() {
     async function getWeather(latLng) {
       const { latitude, longitude } = latLng;
       const { data } = await axios.get(
-        `https://api.tomorrow.io/v4/weather/realtime?location=${latitude},${longitude}&units=imperial&apikey=${process.env.TOMORROW_IO_API_KEY}&fields=sunsetTime%2CsunriseTime%2weatherCodeNight%2weatherCodeDay`
+        `https://api.tomorrow.io/v4/weather/realtime?location=${latitude},${longitude}&units=imperial&apikey=${process.env.REACT_APP_TOMORROW_IO_API_KEY}&fields=sunsetTime%2CsunriseTime%2weatherCodeNight%2weatherCodeDay`
       );
       setWeather(data.data);
     }

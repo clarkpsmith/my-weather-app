@@ -47,8 +47,8 @@ Before you begin, ensure you have met the following requirements:
    - Add your API keys to the `.env` file:
 
    ```dotenv
-   TOMORROW_IO_API_KEY=your-tomorrow-io-api-key
-   GOOGLE_MAPS_API_KEY=your-google-places-api-key
+   REACT_APP_TOMORROW_IO_API_KEY=your-tomorrow-io-api-key
+   REACT_APP_GOOGLE_MAPS_API_KEY=your-google-places-api-key
    ```
 
 ## Usage

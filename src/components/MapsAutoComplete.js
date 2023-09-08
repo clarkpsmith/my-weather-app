@@ -28,14 +28,12 @@ export default function GoogleMaps({ setLatLng, value, setValue }) {
   const [options, setOptions] = React.useState([]);
   const loaded = React.useRef(false);
 
-  const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY;
-
   // get lat long based off of place id
   React.useEffect(() => {
     function getLatLong(placeId) {
       // Construct the Geocoding API URL
 
-      const apiUrl = `https://maps.googleapis.com/maps/api/geocode/json?place_id=${placeId}&key=${googleMapsApiKey}`;
+      const apiUrl = `https://maps.googleapis.com/maps/api/geocode/json?place_id=${placeId}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
 
       // Make the API request
       axios
@@ -63,7 +61,7 @@ export default function GoogleMaps({ setLatLng, value, setValue }) {
   if (typeof window !== 'undefined' && !loaded.current) {
     if (!document.querySelector('#google-maps')) {
       loadScript(
-        `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&libraries=places`,
+        `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&libraries=places`,
         document.querySelector('head'),
         'google-maps'
       );
