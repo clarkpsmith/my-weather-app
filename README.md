@@ -3,6 +3,8 @@
 
 A simple weather app that allows you to get the current weather for a location using the Tomorrow.io Weather API.
 
+You can view the deployed app here (https://my-weather-app-eight-kappa.vercel.app/)
+
 ## Features
 
 - Location search with Material UI Autocomplete.
