@@ -7,7 +7,7 @@ You can view the deployed app here (https://my-weather-app-eight-kappa.vercel.ap
 
 ## Features
 
-- Location search with Material UI Autocomplete.
+- Location search with Material UI Autocomplete and Google Places API.
 - Weather information retrieval from Tomorrow.io API.
 - Display of current weather conditions.
 
