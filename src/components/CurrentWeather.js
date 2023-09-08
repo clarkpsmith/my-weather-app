@@ -32,7 +32,7 @@ const CurrentWeather = ({ weather, location }) => {
   return (
     <div className="w-[100%]">
       {!weather ? (
-        <div className="p-8 text-2xl font-bold h-[356px]">
+        <div className="p-8 pt-24 text-2xl font-bold h-[356px]">
           Where would you like to see the weather?
         </div>
       ) : (
