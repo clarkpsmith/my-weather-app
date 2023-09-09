@@ -32,11 +32,11 @@ const CurrentWeather = ({ weather, location }) => {
   return (
     <div className="w-[100%]">
       {!weather ? (
-        <div className="p-8 pt-24 text-2xl font-bold h-[356px]">
+        <div className="p-8 pt-24 text-2xl font-bold h-[400px]">
           Where would you like to see the weather?
         </div>
       ) : (
-        <div className="h-[356px]">
+        <div className="h-[400px]">
           <h3 className="font-bold text-xl"> {location?.description} </h3>
           <h1 className="text-5xl pt-2">{weatherString}</h1>
           <div className="flex justify-center items-center">
@@ -48,20 +48,20 @@ const CurrentWeather = ({ weather, location }) => {
                 src={`/images/icons/${iconString}`}
               ></img>
             </div>
-            <p className="p-2 pl-4 text-[120px]">
+            <p className="p-2 pl-3 text-[110px]">
               {Math.round(weather?.values?.temperature)}°
             </p>
           </div>
           <div className="flex flex-col p-4 pt-0 ">
             <div className=" flex flex-col text-left md:pl-8">
               <p className="">
-                Relative Humidity:{' '}
+                Relative Humidity:
                 <WeatherVals value={`${weather?.values?.humidity}%`} />
               </p>
               <p className="">
-                Wind:{' '}
+                Wind Speed:
                 <WeatherVals
-                  value={`${windDirection} ${Math.round(
+                  value={`${Math.round(
                     weather?.values?.windSpeed
                   )} mph gusting to ${Math.round(
                     weather?.values?.windGust
@@ -69,11 +69,15 @@ const CurrentWeather = ({ weather, location }) => {
                 />
               </p>
               <p className="">
-                Cloud Cover:{' '}
+                Wind Direction:
+                <WeatherVals value={windDirection} />
+              </p>
+              <p className="">
+                Cloud Cover:
                 <WeatherVals value={`${weather?.values?.cloudCover}%`} />
               </p>
               <p className="">
-                Visibility:{' '}
+                Visibility:
                 <WeatherVals
                   value={`${Math.round(weather?.values?.visibility)} miles`}
                 />

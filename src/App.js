@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App flex justify-center">
-      <div className="sm:m-8  mt-8 bg-white rounded-3xl w-[100%] md:max-w-[768px]">
+      <div className="sm:m-8  mt-6 bg-white rounded-2xl w-[100%] md:max-w-[768px]">
         <div className="m-4 p-4 text-3xl text-center font-bold capitalize">
           My Weather App
         </div>
