@@ -66,10 +66,6 @@ Before you begin, ensure you have met the following requirements:
 3. Enter a location in the search bar, and the app will display the current weather information for that location.
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Material UI Autocomplete: [Material-UI](https://material-ui.com/components/autocomplete/)
